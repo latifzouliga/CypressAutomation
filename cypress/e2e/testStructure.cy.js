@@ -27,5 +27,24 @@ describe("Context: My first Test", () => {
         // cy.get('.nav-link').click();
 
     })
+    
+
+    it('Test 2', () => { 
+        expect(5 + 5).to.equal(10);
+    })
+
+    // skip this test case
+    it.skip('Test 2',() => {
+        expect(100).to.equal(101);
+    })
+
+    it('Test 4', () => {
+        expect(true).to.equal(7 + 3 == '10');
+    })
+
+    // close this test case
+    xit('test 5', () => {
+        expect(false).to.equal(10 === '10');
+    })
 
 });
