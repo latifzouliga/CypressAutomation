@@ -17,14 +17,31 @@ describe('Find or get Elements by using different locators', () => {
         // attribute name and value
         cy.get('[type="text"]').clear()
   
-        // locate multiple Elements
+        // tagName // locate multiple Elements
         cy.get('input').each((item, index, list) => {
 
+            // explicit assertion
             // assert the length of the list is 2
             expect(list).to.have.length(2);
             expect(item).to.have.attr('type');
 
         })
+
+        // locate by attribute name
+        cy.get('[type]');
+
+        // locate with class name
+        cy.get('.btn.btn-primary');
+
+        // locate by id
+        cy.get('#wooden_spoon');
+
+        // if we want to use text: no xpath in Cypress, but it still possible with a different approach
+        cy.get('button').should('contain','Login').click();
+
+        
+
+    
 
         
     })
