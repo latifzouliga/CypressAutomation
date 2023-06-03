@@ -18,7 +18,7 @@ describe('Cypress File Upload Tests', () => {
         cy.visit('upload')
     })
 
-    it.only('Check Upload Action', () => {
+    it('Check Upload Action', () => {
         // choose file button
         cy.get('input#file-upload').attachFile('cover.jpeg');
         // click upload button
