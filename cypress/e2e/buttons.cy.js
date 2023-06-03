@@ -37,7 +37,7 @@ describe('buttons', () => {
   // I will get al button like previous approach, get only the item then check for text of each item,
   // if it is equal to Button 4, then click it
   // get all buttons with tagName, each method is creating a loop
-  it.only('Get all elements', () => {
+  it('Get all elements', () => {
     cy.get('button').each((item) => {
       if (item.text() === 'Button 4') {
         cy.log(item.text()); // this command prints the text at the test console in the browser

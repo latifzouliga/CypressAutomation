@@ -94,7 +94,7 @@ describe('Input Forms Tests', () => {
       cy.get('select[name="job_title"]').should('have.value', 'Scrum Master');
   })
 
-  it.only('Ckeck selection of all select dropdown options', () => {
+  it('Ckeck selection of all select dropdown options', () => {
       // we will provide our test data through fixtures folder as JSON object, then use that data to verify select values
       cy.fixture('departments').then((departments) => {
         // get all option in the menu, and then iterate through these option

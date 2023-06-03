@@ -44,7 +44,7 @@ describe('Find or get Elements by using different locators', () => {
       .click();
   });
 
-  it.only('Check different types of assertions', () => {
+  it('Check different types of assertions', () => {
     // Cypress itself bunbles assertions provided by Chai, Sinon and jQuery libraries
 
     // Should Assertion
